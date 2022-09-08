@@ -6,6 +6,7 @@ function renderLicenseBadge(license) {
   const gV3B= '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
   const gV2B= '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)';
   const cCB = '[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)';
+
   if( license === 'Apache') {
     return apacheB;
   } 
@@ -34,6 +35,7 @@ function renderLicenseLink(license) {
   const gV3Link = 'https://www.gnu.org/licenses/gpl-3.0.html';
   const gV2Link = 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html';
   const cCLink = 'https://creativecommons.org/licenses/by/2.0/legalcode';
+  
   if( license === 'Apache') {
     return apacheLink;
   } 
@@ -91,6 +93,7 @@ function generateMarkdown(data) {
   ~~~
 
   ${data.usage}
+
   ${renderLicenseSection(data.license)}.
   To view a description of this license type, click [here](${renderLicenseLink(data.license)}).
 

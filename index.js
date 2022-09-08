@@ -35,13 +35,6 @@ const questions = [
 
     {
         type: 'input',
-        name: 'package',
-        message: 'What package is required to run your application?',
-        default: 'inquirer',
-    },
-
-    {
-        type: 'input',
         name: 'install',
         message: 'Enter command to install required package:',
         default: 'npm i',
@@ -70,6 +63,7 @@ const questions = [
        type: 'input',
        name: 'test',
        message: 'Enter test instructions:',
+       default: 'npm test'
     },
 
 ]
@@ -77,8 +71,8 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-
-function writeToFile(fileName, data, err) {
+// Had help from instructors
+function writeToFile(fileName, data) {
    return fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
       console.log(err)  
    });
