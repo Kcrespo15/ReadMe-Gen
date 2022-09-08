@@ -42,23 +42,9 @@ const questions = [
 
     {
         type: 'input',
-        name: 'json',
-        message: 'Enter command to create a package.json:',
-        default: 'npm init'
-    },
-
-    {
-        type: 'input',
         name: 'install',
         message: 'Enter command to install required package:',
-        default: 'npm i inquirer@8.2.4',
-    },
-
-    {
-        type: 'input',
-        name: 'start',
-        message: 'Enter command to start your application',
-        default: 'node index',
+        default: 'npm i',
     },
 
     {
