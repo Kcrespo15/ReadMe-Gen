@@ -7,60 +7,83 @@ const path = require('path');
 // TODO: Create an array of questions for user input
 const questions = [ 
 
-    { type:'input',
+    { 
+      type:'input',
       name:'username', 
       message:'What is your GitHub username?',
 
     },
 
     {
-      type:'input',
-      name:'email', 
-      message:'What is your email address?',  
+       type:'input',
+       name:'email', 
+       message:'What is your email address?',  
     },
 
     {
-      type:'input',
-      name:'project', 
-      message:'What is your project`s name?',  
+       type:'input',
+       name:'project', 
+       message:'What is your project`s name?',  
     },
 
     {
-      type:'input',
-      name:'description',  
-      message:'Please write a short description of your project',
+       type:'input',
+       name:'description',  
+       message:'Please write a short description of your project',
       
     },
-    
+
     {
-      type:'list',
-      name:'license',  
-      message:'What kind of License should your project have?',
-      choices:["Apache", "CC", "GPLv3", "GPLv2", "MIT", "None"],  
+        type: 'input',
+        name: 'package',
+        message: 'What package is required to run your application?',
+        default: 'inquirer',
     },
 
     {
-      type:'input',
-      name:'dependencies',
-      message:'What command should be run to install dependencies?',  
+        type: 'input',
+        name: 'json',
+        message: 'Enter command to create a package.json:',
+        default: 'npm init'
     },
 
     {
-      type:'input',
-      name:'test', 
-      message:'What command should be run to run tests?',
+        type: 'input',
+        name: 'install',
+        message: 'Enter command to install required package:',
+        default: 'npm i inquirer@8.2.4',
     },
 
     {
-      type:'input',
-      name:'usage',
-      message:'What does the user need to know about using the repo?',  
+        type: 'input',
+        name: 'start',
+        message: 'Enter command to start your application',
+        default: 'node index',
     },
 
     {
-      type:'input',
-      name:'contribution',
-      message:'What does the user need to know about contributing to the repo?',  
+        type:'list',
+        name:'license',  
+        message:'What kind of License should your project have?',
+        choices:["Apache", "CC", "GPLv3", "GPLv2", "MIT", "None"],  
+    },
+
+    {
+       type:'input',
+       name:'usage',
+       message:'What does the user need to know about using the repo?',
+    },
+
+    {
+       type:'input',
+       name:'contribution',
+       message:'What does the user need to know about contributing to the repo?',  
+    },
+
+    {
+       type: 'input',
+       name: 'test',
+       message: 'Enter test instructions:',
     },
 
 ]
@@ -70,7 +93,7 @@ const questions = [
 // TODO: Create a function to write README file
 
 function writeToFile(fileName, data, err) {
-   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+   return fs.writeFile(path.join(process.cwd(), fileName), data);
 };
 
 
