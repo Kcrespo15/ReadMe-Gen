@@ -57,7 +57,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `## License\n
+  return `## License
   This application is covered under the ${license}`;
 };
 
@@ -67,9 +67,10 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
- ## Description\n\n${data.description}\n
+ ## Description
+ ${data.description}
 
-  ## Table of Contents\n
+  ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -77,33 +78,33 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation\n
-  The ${data.package} package is required to run this application. Run the following command in the command line to initialize a new package:\n
+  ## Installation
+  The ${data.package} package is required to run this application. Run the following command in the command line to initialize a new package:
   ~~~
   ${data.json}
   ~~~
-  \nThen, run the following command in the command line to install the required package:\n 
+  Then, run the following command in the command line to install the required package: 
   ~~~
   ${data.install}
   ~~~
 
-  ## Usage\n
-  To run this application, enter the following command in the command line:\n
+  ## Usage
+  To run this application, enter the following command in the command line:
   ~~~
   ${data.start}
   ~~~
-  
+
   \n${data.usage}
   ${renderLicenseSection(data.license)}.
   To view a description of this license type, click [here](${renderLicenseLink(data.license)}).
 
-  ## Contributing\n
+  ## Contributing
   ${data.contribution}
   
-  ## Tests\n
+  ## Tests
   ${data.test}
 
-  ## Questions\n
+  ## Questions
   If you have any questions view my GitHub profile at [https://github.com/${data.username}](https://github.com/${data.username}) or contact me at ${data.email}.
 
 
