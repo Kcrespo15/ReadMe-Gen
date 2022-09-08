@@ -93,7 +93,9 @@ const questions = [
 // TODO: Create a function to write README file
 
 function writeToFile(fileName, data, err) {
-   return fs.writeFile(path.join(process.cwd(), fileName), data);
+   return fs.writeFile(path.join(process.cwd(), fileName), data, (err) => {
+      console.log(err)  
+   });
 };
 
 

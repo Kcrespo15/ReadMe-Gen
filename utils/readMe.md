@@ -1,3 +1,0 @@
-## Description 
-
-${data.description}
