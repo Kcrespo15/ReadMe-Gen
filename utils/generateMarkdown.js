@@ -83,7 +83,7 @@ function generateMarkdown(data) {
   ~~~
   ${data.json}
   ~~~
-  Then, run the following command in the command line to install the required package: 
+  Then, run the following command in the command line to install the required package:
   ~~~
   ${data.install}
   ~~~
@@ -94,7 +94,7 @@ function generateMarkdown(data) {
   ${data.start}
   ~~~
 
-  \n${data.usage}
+  ${data.usage}
   ${renderLicenseSection(data.license)}.
   To view a description of this license type, click [here](${renderLicenseLink(data.license)}).
 
@@ -106,15 +106,6 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions view my GitHub profile at [https://github.com/${data.username}](https://github.com/${data.username}) or contact me at ${data.email}.
-
-
-
-
-
-
-
-
-
 
 `;
 }

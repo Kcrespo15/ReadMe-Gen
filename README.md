@@ -1,9 +1,9 @@
 # undefined
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
  ## Description
- wuibduowb
+ ouabwdoub
 
   ## Table of Contents
   - [Installation](#installation)
@@ -15,10 +15,11 @@
 
   ## Installation
   The inquirer package is required to run this application. Run the following command in the command line to initialize a new package:
+
   ~~~
   npm init
   ~~~
-  Then, run the following command in the command line to install the required package: 
+  Then, run the following command in the command line to install the required package:
   ~~~
   npm i inquirer@8.2.4
   ~~~
@@ -29,20 +30,19 @@
   node index
   ~~~
 
-  
-iowandnaw
+  hiawvbdihbaw
   ## License
-  This application is covered under the MIT.
-  To view a description of this license type, click [here](https://www.mit.edu/~amini/LICENSE.md).
+  This application is covered under the CC.
+  To view a description of this license type, click [here](https://creativecommons.org/licenses/by/2.0/legalcode).
 
   ## Contributing
-  idwndina
+  iuwvbdubaw
   
   ## Tests
-  npwapdn
+  uivbdouawb
 
   ## Questions
-  If you have any questions view my GitHub profile at [https://github.com/uwbduow](https://github.com/uwbduow) or contact me at uiwdbuoawbd.
+  If you have any questions view my GitHub profile at [https://github.com/biuwbdouwa](https://github.com/biuwbdouwa) or contact me at uiavbwdougawb.
 
 
 
