@@ -10,26 +10,26 @@ const questions = [
     { 
       type:'input',
       name:'username', 
-      message:'What is your GitHub username?',
+      message:'What is your GitHub username?'
 
     },
 
     {
        type:'input',
        name:'email', 
-       message:'What is your email address?',  
+       message:'What is your email address?'  
     },
 
     {
        type:'input',
        name:'project', 
-       message:'What is your project`s name?',  
+       message:'What is your project`s name?' 
     },
 
     {
        type:'input',
        name:'description',  
-       message:'Please write a short description of your project',
+       message:'Please write a short description of your project'
       
     },
 
@@ -37,26 +37,33 @@ const questions = [
         type: 'input',
         name: 'install',
         message: 'Enter command to install required package:',
-        default: 'npm i',
+        default: 'npm i'
     },
 
     {
         type:'list',
         name:'license',  
         message:'What kind of License should your project have?',
-        choices:["Apache", "CC", "GPLv3", "GPLv2", "MIT", "None"],  
+        choices:["Apache", "CC", "GPLv3", "GPLv2", "MIT", "None"]
+    },
+
+    {
+      type: 'input',
+      name:'start',
+      message:'To run this application, enter the following command in the command line:',
+      default: 'node index'
     },
 
     {
        type:'input',
        name:'usage',
-       message:'What does the user need to know about using the repo?',
+       message:'What does the user need to know about using the repo?'
     },
 
     {
        type:'input',
        name:'contribution',
-       message:'What does the user need to know about contributing to the repo?',  
+       message:'What does the user need to know about contributing to the repo?'  
     },
 
     {

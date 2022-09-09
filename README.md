@@ -22,7 +22,7 @@
   ## Usage
   To run this application, enter the following command in the command line:
   ~~~
-  undefined
+  node index
   ~~~
 
   After typing ‘node index’ into the command line, users will be prompted to multiple questions that the users will then fill out to generate the “ReadME.md”. The values of the answers will then generate a file and organize the sections based on the questions answers ; some sections will have a default answer. 
@@ -32,7 +32,7 @@
   To view a description of this license type, click [here](http://www.apache.org/licenses/LICENSE-2.0).
 
   ## Contributing
-  None.
+  None
   
   ## Tests
   npm test
