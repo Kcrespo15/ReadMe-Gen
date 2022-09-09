@@ -64,7 +64,7 @@ function renderLicenseSection(license) {
   } 
   else {
     return `## License
-    This application is covered under the ${license}`;
+    This application is covered under ${license}`;
   }
 };
 
